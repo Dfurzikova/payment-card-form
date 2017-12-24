@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+
+</head>
+<body>
+    <form id="form-card" class="payment-cards">
+        <div class="front-side-card">
+
+            <div class="payments-systems">
+                <img class="payment mastercard" src="img/mastercard.svg">
+                <img class="payment maestro" src="img/maestro.svg">
+                <img class="payment visa" src="img/visa.svg">
+                <img class="payment mir" src="img/mir.svg">
+            </div>
+
+            <input class="card-number-field" type="text" placeholder="Номер карты" name="cardnumber" maxlength="19">
+
+            <div class="valid">VALID THRU</div>
+
+            <div class="month-year-block">
+                <input class="month-field small-field" type="text" placeholder="ММ" name="month" maxlength="2">
+                <div class="slash">/</div>
+                <input class="year-field small-field" type="text" placeholder="ГГ" name="year" maxlength="2">
+            </div>
+
+        </div>
+
+        <div class="back-side-card">
+            <div class="magnet-line"></div>
+            <input class="cvc-field" type="password" placeholder="CVC" name="cvc" maxlength="3">
+            <div class="cvc-text">Три цифры<br> с оборотной<br> стороны карты</div>
+        </div>
+
+    </form>
+</body>
+</html>
